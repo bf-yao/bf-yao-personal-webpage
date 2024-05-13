@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Paul Yao | Personal Website</title>
+    <link rel="icon" href="./asset/website-icon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- 你的自定義CSS樣式表可以在這裡引入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- 導覽欄 -->
+    <div class="container-fluid p-0 sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid p-0 pt-2 position-relative">
+                <!-- 左上logo圖 -->
+                <a class="position-absolute sticky-top" href="#">
+                    <div class="logo-background">
+                        <h3>PY</h3>
+                    </div>
+                </a>
+
+                <!-- 右上深淺模式按鈕 -->
+                <!-- <button id="darkModeToggle" class="darkModeBtn position-absolute end-0">
+                    Toggle
+                </button> -->
+
+
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#about">關於我</a>
+                        </li>
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#skills">技能</a>
+                        </li>
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#projects">作品集</a>
+                        </li>
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#contact">聯絡我</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="content-wrap pt-3">
+
+        <!-- 往上按鈕 -->
+        <a href="#">
+            <button class="btn-back-to-top" id="back-top">
+                <i class="fa fa-arrow-up"></i>
+            </button>
+        </a>
+
+        <!-- 首頁部分 -->
+        <section id="home" class="home" style="background-image: url('./asset/bg-home.png'); 
+        background-size: cover; padding-top:0px;">
+
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="position-relative home-portfolio">
+                    <!-- 左側個人簡介 -->
+                    <div class="d-flex justify-content-center">
+                        <div class="portfolio text-start">
+                            <div class="dynamic-text-wrapper">
+                                <div class="dynamic-text" style="font-size:xxx-large;">
+                                    I'm Paul Yao
+                                </div>
+                                <div class="dynamic-text" style="font-size:xxx-large;">
+                                    姚柏豐
+                                </div>
+                            </div>
+
+                            <h2 class="pt-3" style="font-size:xx-large;">資訊管理學系學生</h2>
+
+                            <p class="pt-3">
+                                國立高雄大學 | 資訊管理學系
+                                <br>
+                                國立中山大學 | 資訊管理研究所
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 右側圖片 -->
+                    <div class="portfolio-picture">
+                        <img src="./asset/myPic.jpg" alt="Portfolio Picture" class="img-fluid"
+                            style="border-radius: 50%; border: 2px solid #fff;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 關於我 -->
+        <section id="about" class="pt-5">
+            <div class="container mt-5">
+                <h2 class="topic text-center">關於我</h2>
+                <div class="row justify-content-center">
+                    <!-- 自我介紹 -->
+                    <div class="about-me mt-5">
+                        <div class="mx-auto">
+                            <p>
+                                Paul Yao，2002年出生，高雄人。
+
+                            </p>
+                            <ul class="pt-2">
+                                <li>2020 | 國立高雄大學 | 資訊管理學系</li>
+                            </ul>
+
+                            <p class="pt-3">
+                                <u>經歷</u> :
+                            </p>
+                            <ul class="pt-2">
+                                <li>大一 : 開始接觸程式設計。</li>
+                                <li>大二 : 修習各種程式相關科目，越學越有興趣。</li>
+                                <li>大三 : 實作各種專案，增強程式技能與應用能力。</li>
+                                <li>大四 : 持續學習各種新知與相關技能。</li>
+                            </ul>
+
+                            <p class="pt-3">
+                                <u>興趣</u> :
+                            </p>
+                            <p class="pt-2">聽中文歌、看Youtube影片、玩電腦遊戲。</p>
+                            <p>打籃球、機車旅遊、吃美食。</p>
+                            <p>掌握各種新知，探索未知，充實人生。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能 -->
+        <section id="skills" class="pt-5">
+            <div class="container mt-5">
+                <h2 class="topic text-center">技能</h2>
+
+                <!-- 開發技能 -->
+                <div class="row skill-row mt-5">
+                    <!-- 前端 -->
+                    <div class="col-lg-6">
+                        <div class="skill-block">
+                            <h4 style="margin-top: 0.8rem;">前端</h4>
+                            <h5>用 Bootstrap 快速製作具有 RWD 的使用者介面。</h5>
+                            <div class="skill-badge mb-3">
+                                <span class="badge badge-pill badge-light mr-2">Html</span>
+                                <span class="badge badge-pill badge-light mr-2">Css</span>
+                                <span class="badge badge-pill badge-light mr-2">Bootstrap</span>
+                                <span class="badge badge-pill badge-light mr-2">RWD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 設計 -->
+                    <div class="col-lg-6">
+                        <div class="skill-block">
+                            <h4 style="margin-top: 0.8rem;">設計</h4>
+                            <h5>設計、製作專題海報。</h5>
+                            <div class="skill-badge mb-3">
+                                <span class="badge badge-pill badge-light">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 後端 -->
+                    <div class="col-lg-6">
+                        <div class="skill-block">
+                            <h4 style="margin-top: 0.8rem;">後端</h4>
+                            <div class="d-flex justify-content-center">
+                                <div class="skill-content">
+                                    <ul>
+                                        <li>
+                                            <h5>Java | 畢業專題前後端串接、邏輯設計。</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Php | 學校課程學過，開發過兩個小專案。</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Python | 修過選修課後有興趣，自學各種套件使用，並實際製作小專案。</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Mysql | 小專案、專題皆使用過Mysql資料庫做資料串接，也開發過資料庫系統。</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            </h5>
+                            <div class="skill-badge mb-3">
+                                <span class="badge badge-pill badge-light mr-2">Java</span>
+                                <span class="badge badge-pill badge-light mr-2">Php</span>
+                                <span class="badge badge-pill badge-light mr-2">Python</span>
+                                <span class="badge badge-pill badge-light mr-2">MySQL</span>
+                                <span class="badge badge-pill badge-light mr-2">Android Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 進度條 -->
+                <!-- <div class="progress mt-5 mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 60%; background-color: chocolate;"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        前端
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 50%; background-color: green;"
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">後端</div>
+                </div>
+
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 30%; background-color: cornflowerblue;"
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">設計</div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="projects" class="pt-5">
+            <div class="container mt-5">
+                <h2 class="topic text-center">作品集</h2>
+
+                <!-- 使用 Tab 來分不同頁面 -->
+                <div class="d-flex justify-content-center mt-5">
+                    <ul class="nav project-nav-custom" id="myTabs">
+                        <li class="nav-item">
+                            <a class="nav-link active mr-2 ml-2" id="web-link" data-toggle="tab" href="#web">網頁</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" id="system-link" data-toggle="tab" href="#system">系統</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" id="others-link" data-toggle="tab" href="#others">其他</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 專案作品介紹區塊 -->
+                <div class="d-flex justify-content-center">
+                    <div class="tab-content mt-5">
+                        <!-- Web project -->
+                        <div class="project-website tab-pane fade show active" id="web">
+                            <div class="project row">
+                                <!-- 放作品(data在web-project.js內) -->
+                            </div>
+                        </div>
+
+                        <!-- System project -->
+                        <div class="project-system tab-pane fade" id="system">
+                            <div class="project row">
+                                <!-- 放作品(data在system-project.js內) -->
+                            </div>
+                        </div>
+
+                        <!-- other -->
+                        <div class="project-other tab-pane fade" id="others">
+                            <div class="project row">
+                                <!-- 放作品(data在other-project.js內) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯絡我 -->
+        <section id="contact" class="pt-5">
+            <div class="container mt-5">
+                <h2 class="topic text-center">聯絡我</h2>
+
+                <div class="position-relative d-flex flex-wrap justify-content-around">
+                    <!-- 左側 -->
+                    <div class="social-links mt-5 text-center">
+                        <h4 class="text-start">我的社群連結</h4>
+                        <!-- 聯絡方式連結 -->
+                        <div class="position-relative d-flex flex-wrap justify-content-center">
+                            <ul class="nav mt-3">
+                                <li class="nav-item mr-3">
+                                    <a href="#contact" class="contact-link-btn">
+                                        <i class="fa fa-github" style="font-size: 36px; color:#343434"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item mr-3">
+                                    <a href="mailto: yaopaul0412@gmail.com" class="contact-link-btn">
+                                        <i class="fa fa-envelope" style="font-size: 26px; color:#343434"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item mr-3">
+                                    <a href="https://www.facebook.com/yaopaul0412/" target="_blank"
+                                        class="contact-link-btn">
+                                        <i class="fa fa-facebook" style="font-size: 26px; color:#343434"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.instagram.com/bf_4.12/" target="_blank"
+                                        class="contact-link-btn">
+                                        <i class="fa fa-instagram" style="font-size: 26px; color:#343434"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4 class="text-start" style="margin-top: 5rem;">歡迎向我提供意見!</h4>
+                    </div>
+
+                    <!-- 右側form group -->
+                    <!-- <div class="form-group mt-5">
+                        <form class="pt-3">
+                            <div class="position-relative mb-3">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" class="form-control" id="name" placeholder="姓名">
+                            </div>
+                            <div class="position-relative mb-3">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" class="form-control" id="email" placeholder="電子郵件">
+                            </div>
+                            <div class="position-relative mb-3">
+                                <i class="fa fa-comment icon"></i>
+                                <textarea name="textarea" id="textarea" rows="4" placeholder="內容"
+                                    style="max-width: 100%; min-width: 100%;"></textarea>
+                            </div> -->
+
+                    <!-- button -->
+                    <!-- <div class="btn-group d-flex justify-content-end">
+                        <button type="reset" class="reset-btn mr-3">重設</button>
+                        <button type="submit" class="submit-btn">送出</button>
+                    </div>
+                    </form>
+                </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 頁腳 -->
+    <footer class="py-3 footer-custom">
+        <div class="text-center" style="color: #ffffff;">
+            <p>Copyright 2024 © Paul Yao</p>
+        </div>
+    </footer>
+
+
+
+    <!-- 引入Bootstrap的JavaScript，通常放在body標籤底部 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- js -->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/web-project.js"></script>
+    <script src="./scripts/system-project.js"></script>
+    <script src="./scripts/other-project.js"></script>
+
+    <!-- 點擊nav-item的滑動動畫
+    <script>
+        $(document).ready(function () {
+            // 當選項被點擊時
+            $('.navbar-nav a').on('click', function (e) {
+                // 阻止默認行為
+                e.preventDefault();
+
+                // 取得目標錨點的 ID
+                var targetId = $(this).attr('href');
+
+                // 使用 animate 實現滑動動畫
+                $('html, body').animate({
+                    scrollTop: $(targetId).offset().top
+                }, 500); // 1000 毫秒為動畫時間
+            });
+        });
+    </script> -->
+
+
+</body>
+
+</html>

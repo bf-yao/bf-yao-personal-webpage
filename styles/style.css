@@ -1,0 +1,433 @@
+/* css reset	 */
+/* * {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+} */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* css start */
+body {
+	position: relative;
+	min-height: 100vh;
+	color: #e8e0d5;
+	background-color: #343434;
+	border: solid #87a96b;
+	border-width: 0px 8px 8px 8px;
+	z-index: 9;
+}
+
+/* light/dark mode */
+/* @media (prefers-color-shceme: dark) {
+	body {
+		background: #343434;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background: #e8e0d5;
+		color: #000;
+	}
+
+	.top-navbar {
+		background: #e8e0d5;
+	}
+} */
+
+.logo-background {
+	background: #e8e0d5;
+	min-width: 50px;
+	min-height: 50px;
+	color: #343434;
+	font-family: fantasy;
+	font-style: normal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.logo-background>h3 {
+	margin: 0;
+}
+
+.navbar-custom a {
+	text-decoration: none;
+}
+
+.btn-back-to-top {
+	background: #c6bfb6;
+	opacity: 0.8;
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	bottom: 25px;
+	right: 20px;
+	display: block;
+	border-radius: 0;
+	border: none;
+	z-index: 10;
+}
+
+.btn-back-to-top:hover {
+	background: #e8e0d5;
+	opacity: 1;
+}
+
+.btn-back-to-top:focus {
+	outline: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-custom {
+	background-color: #87a96b;
+}
+
+a {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+.content-wrap {
+	padding-top: 5.5rem;
+	padding-bottom: 5.5rem;
+}
+
+.home .home-portfolio {
+	color: #000;
+	padding: 5rem;
+	background: rgba(255, 255, 255, 0.3);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+}
+
+.home-portfolio {
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+	width: 80%;
+	height: fit-content;
+	display: grid;
+	gap: 5%;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio>p {
+	padding-right: 3rem;
+}
+
+.portfolio-picture>img {
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
+}
+
+@media (width < 1000px) {
+	.home .home-portfolio {
+		padding: 1rem;
+	}
+
+	.home-portfolio {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.portfolio>h1 {
+		text-align: center;
+	}
+
+	.portfolio>h2 {
+		text-align: center;
+	}
+
+	.portfolio>p {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: center;
+	}
+
+	.portfolio-picture>img {
+		display: none;
+	}
+
+	.dynamic-text {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.topic {
+	text-decoration: underline 3px #87a96b;
+	text-underline-offset: 7px;
+}
+
+.navbar-custom {
+	background-color: #343434;
+	border: 8px solid #87a96b;
+	border-width: 8px 0px 0px 0px;
+	/*上右下左*/
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+	border: transparent;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.nav-link {
+	color: #e8e0d5;
+	text-decoration: underline 3px transparent;
+	text-underline-offset: 4px;
+}
+
+.nav-link:hover {
+	color: #e8e0d5;
+	text-decoration: underline 3px #87a96b;
+	text-underline-offset: 4px;
+}
+
+.darkModeBtn {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.social-links {
+	min-width: 30%;
+}
+
+.contact-link-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: none;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	background: #e8e0d5;
+	text-decoration: none;
+	outline: none;
+}
+
+.contact-link-btn:hover {
+	background: #c6bfb6;
+	text-decoration: none;
+}
+
+.contact-link-btn:focus {
+	outline: 0;
+}
+
+.form-group {
+	min-width: 60%;
+}
+
+.form-group i {
+	position: absolute;
+}
+
+.icon {
+	padding: 11px;
+	color: #000;
+	min-width: 30px;
+}
+
+input[type="text"] {
+	padding-left: 36px;
+}
+
+input[type="email"] {
+	padding-left: 36px;
+}
+
+textarea {
+	padding-top: 6px;
+	padding-left: 36px;
+}
+
+.reset-btn {
+	background: transparent;
+	border: 1px solid #e8e0d5;
+	text-decoration: none;
+	color: #e8e0d5;
+}
+
+.reset-btn:hover {
+	background-color: #5e5d5d;
+	border: 1px solid #e8e0d5;
+}
+
+.reset-btn:focus {
+	outline: 0;
+}
+
+.submit-btn {
+	background: #e8e0d5;
+	text-decoration: none;
+	color: #343434;
+	border: 1px solid transparent;
+}
+
+.submit-btn:hover {
+	background: #c6bfb6;
+	border: 1px solid transparent;
+}
+
+.submit-btn:focus {
+	outline: 0;
+}
+
+.project {
+	/* width: 100%;
+	height: fit-content;
+	display: grid;
+	gap: 5%;
+	grid-template-columns: repeat(3, 1fr); */
+	row-gap: 1.5rem;
+	/* column-gap: 1.5rem; */
+}
+
+.project-block {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+	padding: 0.5rem;
+}
+
+.project-use-skill {
+	margin-top: 0.5rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: auto; /* 若超出框界，可將物件平行滑動 */
+	scrollbar-width: none;
+}
+
+.project-description {
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+.project-portfolio {
+	position: absolute;
+	top: 0.7rem;
+	left: 0.7rem;
+	opacity: 0.8;
+}
+
+.project-type {
+	position: absolute;
+	top: 0.7rem;
+	right: 0.7rem;
+	opacity: 0.8;
+}
+
+@media (width < 1000px) {
+	.project {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.skill-row {
+	row-gap: 1.5rem;
+}
+
+.skill-block {
+	width: 100%;
+	height: fit-content;
+	border: 1px solid #fff;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.skill-badge {
+	text-align: center;
+	white-space: nowrap;
+	/* 文字一行顯示 */
+	overflow: auto;
+	scrollbar-width: none;
+}
+
+.skill-block>h4,
+h5 {
+	color: #fff;
+	margin-bottom: 1rem;
+}
+
+.skill-content {
+	width: 95%;
+	text-align: left;
+}
+
+.skill-content>ul {
+	color: #fff;
+	list-style: none;
+	text-indent: -0.5em;
+	/* 縮排往左0.5em */
+}
+
+.project-nav-custom {
+	border-bottom: none;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.project-nav-custom .nav-link:hover {
+	color: #87a96b;
+	text-decoration: underline 3px #87a96b;
+	text-underline-offset: 4px;
+}
+
+.project-nav-custom .nav-link.visited {
+	color: #87a96b;
+	text-decoration: underline 3px #87a96b;
+	text-underline-offset: 4px;
+}
+
+.project-nav-custom .nav-link:focus {
+	color: #87a96b;
+	text-decoration: underline 3px #87a96b;
+	text-underline-offset: 4px;
+}
+
+.about-me {
+	min-width: 60%;
+	max-width: 90%;
+	border-radius: 20px;
+	background: #4c4b4b;
+	color: #fff;
+	padding: 1rem;
+	font-size: large;
+}
